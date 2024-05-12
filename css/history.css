@@ -1,0 +1,58 @@
+#history {
+/*     background-color: #FFEFA0;*/
+}
+
+#history h2 {
+    color: #AC4B1C;
+}
+
+.timeline-row {
+    margin: 0;
+    justify-content: center;
+}
+
+.item {
+    background-color: #FFEFA0;
+    border: 3px solid #AC4B1C;
+    border-radius: 15px;
+    margin: 10px 0px 10px 0px;
+}
+
+.item:not(.first) {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.item.left {
+    text-align: right;
+}
+
+.item.right {
+    text-align: left;
+}
+
+.vertical-line {
+    margin: 0;
+    padding: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #AC4B1C;
+}
+
+/*.vertical-line .line-first {
+    margin-top: 15px;
+}*/
+
+@keyframes expandLine {
+    from {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+}
+
+.empty {
+    height: 120px;
+    visibility: hidden;
+}
